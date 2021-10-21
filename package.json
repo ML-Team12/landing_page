@@ -1,11 +1,11 @@
 {
-  "name": "my-app",
+  "name": "posteye",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.jsx",
   "scripts": {
-    "build": "webpack --mode production",
-    "start": "webpack serve --mode production"
+    "build": "webpack --mode=development",
+    "start": "webpack serve --mode=development"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +17,7 @@
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.0",
     "react-slick": "^0.28.1",
+    "reactstrap": "^8.10.0",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
