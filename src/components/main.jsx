@@ -44,7 +44,7 @@ export default class Main extends React.Component {
                             <Nav navbar>
                                 <div className="navbar-menu"> 
                                     <NavItem>
-                                        <NavLink tag={Link} to="/home">
+                                        <NavLink tag={Link} to="/">
                                             Home
                                         </NavLink>
                                     </NavItem>
