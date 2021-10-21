@@ -1,0 +1,72 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "9dd9e835aebe1060ba7190ad2b2ed951",
+      "css": "search",
+      "code": 59392,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "83a806d41893e8bc6fac601669c76cd2",
+      "css": "shop",
+      "code": 59445,
+      "src": "maki"
+    },
+    {
+      "uid": "1e394b6cd5e0da3e10d8e4f3fe355960",
+      "css": "adult",
+      "code": 59393,
+      "src": "elusive"
+    },
+    {
+      "uid": "47a1f80457068fbeab69fdb83d7d0817",
+      "css": "youtube-play",
+      "code": 61802,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "bc50457410acf467b8b5721240768742",
+      "css": "facebook",
+      "code": 62220,
+      "src": "entypo"
+    },
+    {
+      "uid": "906348dc798a0d42715cc97c875e3ac6",
+      "css": "twitter-squared",
+      "code": 62212,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "i6ej1r6t84xouh0dct7g9zyx3ya9s9eg",
+      "css": "globe",
+      "code": 59394,
+      "src": "modernpics"
+    },
+    {
+      "uid": "6db15bda083b09a04bd27dcc1d00744d",
+      "css": "at",
+      "code": 59395,
+      "src": "iconic"
+    },
+    {
+      "uid": "2568cf12e98fe9d6c3d82c955a297d29",
+      "css": "vive-logo",
+      "code": 59396,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M752.9 829.4C688.2 847.1 623.5 858.8 558.8 858.8 488.2 858.8 423.5 847.1 364.7 829.4 294.1 805.9 247.1 735.3 264.7 658.8 288.2 523.5 352.9 405.9 452.9 311.8 511.8 258.8 600 258.8 652.9 311.8 752.9 405.9 823.5 523.5 852.9 658.8 870.6 729.4 829.4 805.9 752.9 829.4ZM694.1 47.1C682.4 23.5 658.8 11.8 629.4 11.8H482.4C458.8 11.8 435.3 23.5 417.6 47.1L5.9 758.8C-5.9 782.4-5.9 805.9 5.9 829.4L76.5 952.9C88.2 976.5 111.8 988.2 141.2 988.2H964.7C988.2 988.2 1011.8 976.5 1029.4 952.9L1100 829.4C1111.8 805.9 1111.8 776.5 1100 758.8L694.1 47.1 694.1 47.1Z",
+        "width": 1118
+      },
+      "search": [
+        "vive-logo-short"
+      ]
+    }
+  ]
+}
