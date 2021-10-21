@@ -39,7 +39,7 @@ export default class Main extends React.Component {
                     <div className="container">
                         <Navbar color="faded" light expand="md">
                             <NavbarBrand className="background-drop-nav" href="/">
-                                <img src={require('../../dist/img/logo.png')} class="logo-htc"/>
+                                <img src={require('../../dist/img/logo.png')} />
                             </NavbarBrand>
                             <Nav navbar>
                                 <div className="navbar-menu"> 
@@ -113,7 +113,7 @@ export default class Main extends React.Component {
                         <ul>
                             <li>
                                 <NavLink to="/" style={{ textDecoration: 'none'}}>
-                                    <img src={require('../../dist/img/logo.png')} class="logo-htc"/>
+                                    <img src={require('../../dist/img/logo.png')} />
                                 </NavLink>
                             </li>
                             <li>
