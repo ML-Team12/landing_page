@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 
+const indexPath = path.resolve(__dirname);
 const srcPath = path.resolve(__dirname, 'src');
 const distPath = path.resolve(__dirname, 'dist');
 
@@ -92,7 +93,7 @@ module.exports = {
           }),
     ],
     devServer: {
-        static: distPath,
+        static: indexPath,
         compress: true,
         port: 9999,
         historyApiFallback: true,

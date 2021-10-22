@@ -41,45 +41,48 @@ export default class Main extends React.Component {
 
     componentDidMount() {
         const curUrl = window.location.href;
+        const splittedUrl = curUrl.split('//');
+        const domain = splittedUrl[1].split('/')[0];
+        console.log(domain)
 
-        if(!curUrl.includes(baseUrl))
+        if(domain == 'localhost:8889')
             this.setState({server: false});
     } 
 
     render() {
         console.log(this.state.server)
         return (
-            <Router basename="/landing_page">
+            <Router basename={this.state.server ? baseUrl : ''}>
                 <div className="main">
                     <div className="container">
                         <Navbar color="faded" light expand="md">
-                            <NavbarBrand className="background-drop-nav" href={this.state.server ? baseUrl + '/' : '/'}>
+                            <NavbarBrand className="background-drop-nav" href='/'>
                                 <img src={require('../../dist/img/logo.png')} />
                             </NavbarBrand>
                             <Nav navbar>
                                 <div className="navbar-menu"> 
                                     <NavItem>
-                                        <NavLink tag={Link} to={this.state.server ? baseUrl + '/' : '/'}>
+                                        <NavLink tag={Link} to='/'>
                                             Home
                                         </NavLink>
                                     </NavItem>
                                     <NavItem>
-                                        <NavLink tag={Link} to={this.state.server ? baseUrl + '/product' : '/product'}>
+                                        <NavLink tag={Link} to='/product'>
                                             Product
                                         </NavLink>
                                     </NavItem>
                                     <NavItem>
-                                        <NavLink tag={Link} to={this.state.server ? baseUrl + '/about' : '/about'}>
+                                        <NavLink tag={Link} to='/about'>
                                             About
                                         </NavLink>
                                     </NavItem>                      
                                     <NavItem>
-                                        <NavLink tag={Link} to={this.state.server ? baseUrl + '/tutorial' : '/tutorial'}>
+                                        <NavLink tag={Link} to='/tutorial'>
                                             Tutorial
                                         </NavLink>
                                     </NavItem>                          
                                     <NavItem>
-                                        <NavLink tag={Link} to={this.state.server ? baseUrl + '/contact' : '/contact'}>
+                                        <NavLink tag={Link} to='/contact'>
                                             Contact
                                         </NavLink>
                                     </NavItem>                                        
@@ -90,35 +93,35 @@ export default class Main extends React.Component {
 
                     <Route
                         exact
-                        path={this.state.server ? baseUrl + '/' : '/'}
+                        path='/'
                         render={() => (
                             <Home/>
                         )}
                     />
                     <Route
                         exact
-                        path={this.state.server ? baseUrl + '/product' : '/product'}
+                        path='/product'
                         render={() => (
                             <Product/>
                         )}
                     />
                     <Route
                         exact
-                        path={this.state.server ? baseUrl + '/about' : '/about'}
+                        path='/about'
                         render={() => (
                             <About/>
                         )}
                     />
                     <Route
                         exact
-                        path={this.state.server ? baseUrl + '/tutorial' : '/tutorial'}
+                        path='/tutorial'
                         render={() => (
                             <Tutorial/>
                         )}
                     />
                     <Route
                         exact
-                        path={this.state.server ? baseUrl + '/contact' : '/contact'}
+                        path='/contact'
                         render={() => (
                             <Contact/>
                         )}
@@ -127,7 +130,7 @@ export default class Main extends React.Component {
                     <footer>
                         <ul>
                             <li>
-                                <NavLink to={this.state.server ? baseUrl + '/' : '/'} style={{ textDecoration: 'none'}}>
+                                <NavLink to='/' style={{ textDecoration: 'none'}}>
                                     <img src={require('../../dist/img/logo.png')} />
                                 </NavLink>
                             </li>
