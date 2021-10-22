@@ -49,7 +49,7 @@ export default class Main extends React.Component {
     render() {
         console.log(this.state.server)
         return (
-            <Router>
+            <Router basename="/landing_page">
                 <div className="main">
                     <div className="container">
                         <Navbar color="faded" light expand="md">
