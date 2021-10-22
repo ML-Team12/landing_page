@@ -26,6 +26,9 @@ import Home from "./dashboard/home.jsx";
 import Product from "./dashboard/product.jsx";
 import Tutorial from "./dashboard/tutorial.jsx";
 
+// Base URL
+const baseUrl = '/landing_page';
+
 export default class Main extends React.Component {
 
     constructor(props) {
@@ -38,33 +41,33 @@ export default class Main extends React.Component {
                 <div className="main">
                     <div className="container">
                         <Navbar color="faded" light expand="md">
-                            <NavbarBrand className="background-drop-nav" href="/">
+                            <NavbarBrand className="background-drop-nav" href={baseUrl + '/'}>
                                 <img src={require('../../dist/img/logo.png')} />
                             </NavbarBrand>
                             <Nav navbar>
                                 <div className="navbar-menu"> 
                                     <NavItem>
-                                        <NavLink tag={Link} to="/">
+                                        <NavLink tag={Link} to={baseUrl + '/'}>
                                             Home
                                         </NavLink>
                                     </NavItem>
                                     <NavItem>
-                                        <NavLink tag={Link} to="/product">
+                                        <NavLink tag={Link} to={baseUrl + '/product'}>
                                             Product
                                         </NavLink>
                                     </NavItem>
                                     <NavItem>
-                                        <NavLink tag={Link} to="/about">
+                                        <NavLink tag={Link} to={baseUrl + '/about'}>
                                             About
                                         </NavLink>
                                     </NavItem>                      
                                     <NavItem>
-                                        <NavLink tag={Link} to="/tutorial">
+                                        <NavLink tag={Link} to={baseUrl + '/tutorial'}>
                                             Tutorial
                                         </NavLink>
                                     </NavItem>                          
                                     <NavItem>
-                                        <NavLink tag={Link} to="/contact">
+                                        <NavLink tag={Link} to={baseUrl + '/contact'}>
                                             Contact
                                         </NavLink>
                                     </NavItem>                                        
@@ -75,35 +78,35 @@ export default class Main extends React.Component {
 
                     <Route
                         exact
-                        path="/"
+                        path={baseUrl + '/'}
                         render={() => (
                             <Home/>
                         )}
                     />
                     <Route
                         exact
-                        path="/product"
+                        path={baseUrl + '/product'}
                         render={() => (
                             <Product/>
                         )}
                     />
                     <Route
                         exact
-                        path="/about"
+                        path={baseUrl + '/about'}
                         render={() => (
                             <About/>
                         )}
                     />
                     <Route
                         exact
-                        path="/tutorial"
+                        path={baseUrl + '/tutorial'}
                         render={() => (
                             <Tutorial/>
                         )}
                     />
                     <Route
                         exact
-                        path="/contact"
+                        path={baseUrl + '/contact'}
                         render={() => (
                             <Contact/>
                         )}
@@ -112,7 +115,7 @@ export default class Main extends React.Component {
                     <footer>
                         <ul>
                             <li>
-                                <NavLink to="/" style={{ textDecoration: 'none'}}>
+                                <NavLink to={baseUrl + '/'} style={{ textDecoration: 'none'}}>
                                     <img src={require('../../dist/img/logo.png')} />
                                 </NavLink>
                             </li>
