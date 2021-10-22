@@ -27,7 +27,7 @@ import Product from "./dashboard/product.jsx";
 import Tutorial from "./dashboard/tutorial.jsx";
 
 // Base URL
-const baseUrl = '/landing_page/dist';
+const baseUrl = '/landing_page';
 
 export default class Main extends React.Component {
 
