@@ -31,11 +31,10 @@ const App = (props) => {
                         </ul>
 
                         <ul className="navbar-menu">
-                        <li><NavLink to="/" style={{ textDecoration: 'none', color:'#fff'}}><h3>Home</h3></NavLink></li>
-                            <li><h3>Product</h3></li>
-                            <li><h3>About</h3></li>
-                            <li><h3>Tutorial</h3></li>
-                            <li><h3>Contact</h3></li>
+                            <li><NavLink to="/" style={{ textDecoration: 'none', color:'#fff'}}><h3>Home</h3></NavLink></li>
+                            <li><NavLink to="/about" style={{ textDecoration: 'none', color:'#fff'}}><h3>About</h3></NavLink></li>
+                            <li><NavLink to="/tutorial" style={{ textDecoration: 'none', color:'#fff'}}><h3>Tutorial</h3></NavLink></li>
+
                         </ul>
                         
                 </div>
@@ -43,8 +42,8 @@ const App = (props) => {
             </NavDiv>
             <Switch>
                 <Route exact path="/" component={Main}></Route>
-                {/* <Route exact path="/products" component={Product}></Route>
-                <Route exact path="/support" component={Support}></Route> */}
+                <Route exact path="/about" component={About}></Route>
+                <Route exact path="/tutorial" component={Tutorial}></Route>
             </Switch>
             <footer>
                 <ul>
@@ -136,18 +135,33 @@ export function Main() {
   
 }
 
-export function Product(){
-    return(
-        <div>
-            <h1>AAAA</h1>
-        </div>
-    )
-}
 
 export function About(){
     return(
-        <div>
-
+        <div className='about-page'>
+                <h1>Team Members</h1>
+            <div className='grid-photo'>
+                <div className='profile-picture'>
+                    <img src={require('../dist/img/profile/jaden.jpg')}></img>
+                    <h2>Jaden Liu</h2>
+                    <h4>Computer Science Department</h4>
+                </div>
+                <div className='profile-picture'>
+                    <a href="https://github.com/edoardodominikus" target="_blank"><img src={require('../dist/img/profile/edo.jpg')}></img></a>
+                    <h2>Edoardo Dominikus</h2>
+                    <h4>IBP Electrical Engineering Computer Science Department</h4>
+                </div>
+                <div className='profile-picture'>
+                    <img src={require('../dist/img/profile/bryan.jpg')}></img>
+                    <h2>Bryan Hartono</h2>
+                    <h4>IBP Electrical Engineering Computer Science Department</h4>
+                </div>
+                <div className='profile-picture'>
+                    <img src={require('../dist/img/profile/michelle.jpg')}></img>
+                    <h2>Michelle Novenda</h2>
+                    <h4>Computer Science Department</h4>
+                </div>
+            </div>
         </div>
     )
 }
@@ -159,10 +173,4 @@ export function Tutorial(){
         </div>
     )
 }
-export function Contact(){
-    return(
-        <div>
 
-        </div>
-    )
-}
