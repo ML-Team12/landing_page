@@ -142,7 +142,7 @@ export function About(){
                 <h1>Team Members</h1>
             <div className='grid-photo'>
                 <div className='profile-picture'>
-                    <img src={require('../dist/img/profile/jaden.jpg')}></img>
+                    <a href="https://github.com/jadenliu12" target="_blank"><img src={require('../dist/img/profile/jaden.jpg')}></img></a>
                     <h2>Jaden Liu</h2>
                     <h4>Computer Science Department</h4>
                 </div>
@@ -152,17 +152,16 @@ export function About(){
                     <h4>IBP Electrical Engineering Computer Science Department</h4>
                 </div>
                 <div className='profile-picture'>
-                    <img src={require('../dist/img/profile/bryan.jpg')}></img>
+                    <a href="https://github.com/bryanhartono" target="_blank"><img src={require('../dist/img/profile/bryan.jpg')}></img></a>
                     <h2>Bryan Hartono</h2>
                     <h4>IBP Electrical Engineering Computer Science Department</h4>
                 </div>
                 <div className='profile-picture'>
-                    <img src={require('../dist/img/profile/michelle.jpg')}></img>
-                    <h2>Michelle Novenda</h2>
+                    <a href="https://github.com/michellenovenda" target="_blank"><img src={require('../dist/img/profile/michelle.jpg')}></img></a>                    <h2>Michelle Novenda</h2>
                     <h4>Computer Science Department</h4>
                 </div>
             </div>
-        </div>
+        </div>  
     )
 }
 
