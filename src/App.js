@@ -33,8 +33,6 @@ const App = (props) => {
                         <ul className="navbar-menu">
                             <li><NavLink to="/" style={{ textDecoration: 'none', color:'#fff'}}><h3>Home</h3></NavLink></li>
                             <li><NavLink to="/about" style={{ textDecoration: 'none', color:'#fff'}}><h3>About</h3></NavLink></li>
-                            <li><NavLink to="/tutorial" style={{ textDecoration: 'none', color:'#fff'}}><h3>Tutorial</h3></NavLink></li>
-
                         </ul>
                         
                 </div>
@@ -43,7 +41,6 @@ const App = (props) => {
             <Switch>
                 <Route exact path="/" component={Main}></Route>
                 <Route exact path="/about" component={About}></Route>
-                <Route exact path="/tutorial" component={Tutorial}></Route>
             </Switch>
             <footer>
                 <ul>
@@ -100,29 +97,29 @@ export function Main() {
                     </div>
                     <div className="caption">
                         <span>
-                            Posteye uses the data from the camera to automatically what is the ideal screen brightness setting for your eyes
+                            Posteye uses the data from the camera to automatically what is the ideal screen brightness setting for your eyes.
                         </span>
                     </div>
                 </div>
                 <div className="features-block">
                     <div className="features-title">
                         <div className="number"><span>2</span></div>
-                        <div className="name"><span>EYE - BLINK & SLEEP DETECTION</span></div>
+                        <div className="name"><span>BLINK DETECTION</span></div>
                     </div>
                     <div className="caption">
                         <span>
-                            Posteye reminds you if you don’t blink on the average healthy rate and buzz you if you fell asleep!                        
+                        Posteye reminds you if you don’t blink on the average healthy rate.                        
                         </span>
                     </div>
                 </div>
                 <div className="features-block">
                     <div className="features-title">
                         <div className="number"><span>3</span></div>
-                        <div className="name"><span>POSTURE DETECTION</span></div>
+                        <div className="name"><span>SLEEP DETECTION</span></div>
                     </div>
                     <div className="caption">
                         <span>
-                            Posteye helps you to fix those posture. Being a programmer we undeniably faces this problem. Posteye will always remind you to have a nice posture position!
+                        Posteye wakes you up when you fall asleep or set your computer to sleep mode.
                         </span>
                     </div>
                 </div>
