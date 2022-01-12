@@ -80,7 +80,7 @@ export function Main() {
                     <img src={require('../dist/img/monitor.png')}></img>
                 </div>
                 <div className="button-download">
-                    <button>Try For Free</button>
+                    <button><a href="https://github.com/ML-Team12/app/archive/refs/heads/main.zip">Try For Free</a></button>
                 </div>
             </div>
         </div>

@@ -107,12 +107,17 @@ main{
             button{
               cursor: pointer;
               background-color: #2091F9;
-              color:#fff;
+              
               text-align: center;
               margin: 0 auto;
               padding: 0px;
               margin-top: 8%;
-              font-size: 23px;
+              
+              a{
+                font-size: 23px;
+                color:#fff;
+                text-decoration: none;
+              }
             }
           }
           
