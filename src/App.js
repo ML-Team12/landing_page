@@ -70,7 +70,7 @@ export function Main() {
             <div className="title">
 
                 <div className="main-title">
-                    <h1>Posture and Eye Protection</h1>
+                    <h1>For Your Eyes Protection</h1>
                     <div className="small-caption">
                         <h2>To remind you who are always on your computer</h2>
                     </div>
@@ -119,7 +119,7 @@ export function Main() {
                     </div>
                     <div className="caption">
                         <span>
-                        Posteye wakes you up when you fall asleep or set your computer to sleep mode.
+                        Posteye remind you when you fell asleep during your screentime.
                         </span>
                     </div>
                 </div>
